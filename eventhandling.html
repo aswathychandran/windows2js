@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>WELCOME</title>
+
+        <script>
+            //on load
+            function load(){
+                alert("Page Loading...")
+            }
+           //on click
+            function change(){
+                document.getElementById("p1").innerHTML="WELCOME"
+                document.getElementById("demo")
+                .style.color="red"
+            }
+
+        </script>
+    </head>
+    <body onload="load()">
+    
+        <button onclick="change()">click here</button>
+        <p id="p1"></p>
+        <div id="demo"> javascript...</div>
+        
+    </body>
+</html>

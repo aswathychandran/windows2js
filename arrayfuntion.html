@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            WELOME
+        </title>
+        <script>
+        var s="hello world"
+        //console.log(s[0])
+        for(i in s){
+            console.log(s[i])
+        }
+        for(i in s){
+            console.log(i)}
+        for(i=0;i<3;i++){
+            console.log(i)
+        }
+    
+        var i=0
+        while(i<=4){
+            console.log("hello")
+            i=i+1 //in while it is given after the console
+        }
+    //for 10 odd num
+        for(i=1;i<21;i=i+2){
+            console.log(i)
+        }
+    //function
+    function add(){
+        var a=10
+        var b=20
+        var sum=a+b
+        console.log("sum=",sum)
+    }
+    add()
+    //can be done like this also
+    function add(a,b){
+        var sum=a+b
+        console.log("sum=",sum)}
+        add(10,30)
+        add(2,3)
+        add(5,5)
+    //nested function....function closure
+    function outer(){
+        var i=100
+        function inner(){
+            console.log(i)
+        } inner()
+
+    } outer()
+    //return statement
+    function add(a,b){
+        var sum=a+b
+        return sum
+    }
+    console.log(add(10,30))
+    var result =add(10,30)
+    console.log(result)
+    //function can be aslo be given in this format
+    var add=function (a,b){
+        console.log(a+b)
+    }
+    add(10,30)
+    //self invoking (take in another page)
+    (function test(){
+        console.log("self invoking..")
+        console.log("execution ompleted..")
+    })()
+
+
+        </script>
+    </head>
+</html>

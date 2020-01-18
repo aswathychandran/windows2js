@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html
+><head>
+    <script>
+        function check(){
+          var input=document.getElementById("uname").value
+          //alert(input)
+          var regex =/\d*/g
+          alert(input.match(regex))
+        }
+        </script>
+
+</head>
+<body>
+    <input type="text" id="uname">
+    <button onclick="check()">check</button>
+</body>
+</html>

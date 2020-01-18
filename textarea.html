@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function searchinp(){
+                var content= document.getElementById("area").value
+                console.log(content)
+                var text=document.getElementById("search").value
+                console.log(text)
+                var reg=new RegExp(text,'g')
+                alert(content.match(reg))
+
+                document.getElementById("view").innerHTML
+                =content.replace(reg,'<span style="background-color:yellow">'+text+"</span>")
+            }
+            </script>
+
+    </head>
+    <body>
+        <textarea name="" id="area" cols="30" rows="10">
+        javascript is dynamic.</textarea>
+        <input type="text" name="" id="search">
+        <button onclick="searchinp()">search</button>
+        <p id="view"></p>
+
+
+    </body>
+</html>

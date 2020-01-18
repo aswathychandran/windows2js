@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function check(){
+                var input=document.getElementById("uname").value
+                var regex=/\w*[@][a-z]{5}[.][a-z]{2,3}$/g
+               alert(regex.test(input))
+        
+            }
+            
+            </script>
+
+    </head>
+    
+    <body>
+            <input type="text" id="uname">
+            <button onclick="check()">check</button>
+        </body>
+</html>
